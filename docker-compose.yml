@@ -1,0 +1,7 @@
+services:
+  apache:
+    image: httpd
+    ports:
+      - 6080:80
+    volumes:
+      - "${PWD}:/usr/local/apache2/htdocs/"
